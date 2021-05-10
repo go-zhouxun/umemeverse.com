@@ -1,10 +1,10 @@
 <template>
 <div class="body">
   <div class="container">
-    <Card name="MEME" icon="../assets/consensus.png" desc="MEME是。。。。。。。。" address="0xFcACcCf880F274596c5d33A2d1f5705839ab4eF7"></Card>
-    <Card name="KOBE" icon="../assets/kobe.png" desc="KOBE是。。。。。。。。" address=""></Card>
-    <Card name="CAT" icon="../assets/cat.png" desc="CAT是。。。。。。。。" address="0x1cABA43BE99e299f1d886D74e63C770C96cEd296"></Card>
-    <Card name="NASA" icon="../assets/nasa.png" desc="NASA是。。。。。。。。" address="0x4dA588BcB861533B8e2e5b2E3140029Ce628cB06"></Card>
+    <Card name="MEME" icon="meme.png" address="0xFcACcCf880F274596c5d33A2d1f5705839ab4eF7"></Card>
+    <Card name="KOBE" icon="kobe.png" address=""></Card>
+    <Card name="CAT" icon="cat.png" address="0x1cABA43BE99e299f1d886D74e63C770C96cEd296"></Card>
+    <Card name="NASA" icon="nasa.png" address="0x4dA588BcB861533B8e2e5b2E3140029Ce628cB06"></Card>
   </div>
 </div>
 </template>

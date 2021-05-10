@@ -1,6 +1,6 @@
 <template>
 <div class="card">
-    <img class="icon" v-bind:src="{icon}"/>
+    <img class="icon" v-bind:src="require(`@/assets/${icon}`)"/>
     <div class="title"><span>{{name}}</span></div>
     <div class="wbtn">
         <button @click="claim" class="btn"><div class="btn-txt">{{'Claim'}}</div></button>
@@ -15,10 +15,9 @@ export default {
         return {
         }
     },
-    props: ['name', 'icon', 'desc', 'address'],
+    props: ['name', 'icon', 'address'],
     methods: {
         claim: function () {
-            console.log("===========", this.address)
         }
     }
 }
