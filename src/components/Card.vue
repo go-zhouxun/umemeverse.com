@@ -3,22 +3,40 @@
     <img class="icon" v-bind:src="require(`@/assets/${icon}`)"/>
     <div class="title"><span>{{name}}</span></div>
     <div class="wbtn">
-        <button @click="claim" class="btn"><div class="btn-txt">{{'Claim'}}</div></button>
+        <button v-if="enable" @click="claim" class="btn">
+            <div class="btn-txt">{{'Claim'}}</div>
+        </button>
+        <button v-else @click="claim" disabled class="btn">
+            <div class="btn-txt">{{'Claim'}}</div>
+        </button>
     </div>
 </div>
 </template>
 
 <script>
+import airdrop from '../service/var'
 export default {
     name: 'Card',
     data() {
         return {
+            enable: false
         }
     },
     props: ['name', 'icon', 'address'],
     methods: {
         claim: function () {
+            airdrop.claim(this.address)
         }
+    },
+    mounted() {
+        setInterval(() => {
+            airdrop.enable(this.address).then(
+            (res) => {
+                this.enable = res
+                console.log(this.address, this.enable, res,  "=============")
+            }
+        )
+        }, 3000)
     }
 }
 </script>

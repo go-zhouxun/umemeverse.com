@@ -7,8 +7,22 @@
 </template>
 
 <script>
+import Common from './service/common'
+
 export default {
-  name: 'App'
+  name: 'App',
+  mounted() {
+    Common.enable()
+    let ticker = setTimeout(() => {
+      let chainId = Common.chainId()
+      if (chainId && chainId != 56) {
+        alert("Please login with your BSC wallet!", Common.chainId())
+      } else {
+        clearInterval(ticker)
+      }
+    }, 500)
+    
+  }
 }
 </script>
 
