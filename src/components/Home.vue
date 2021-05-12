@@ -2,6 +2,8 @@
 <div class="body">
   <div class="container">
     <Card name="MEME" icon="meme.png" address="0xa25441bD87bAA2D8c974717C2e1d49e62b162a5b"></Card>
+    <Card name="LOWB" icon="loser.png" address="0x843d4a358471547f51534e3e51fae91cb4dc3f28"></Card>
+    <Card name="MUSK" icon="musk.png" address="0xa45d3247164a0f4fc02264fc3ec9bc9512967043"></Card>
     <Card name="KOBE" icon="kobe.png" address="0x5ee164d79f4C5B6144B1341381cEeC2fdA79fa68"></Card>
     <Card name="CAT" icon="cat.png" address="0xE22FFb5236954482E5D56e20cE7C52F0Cf936374"></Card>
     <Card name="NASA" icon="nasa.png" address="0xC2E41C9813EA86916A51A5699fd217cC270fb044"></Card>
