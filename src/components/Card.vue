@@ -33,7 +33,6 @@ export default {
             airdrop.enable(this.address).then(
             (res) => {
                 this.enable = res
-                console.log(this.address, this.enable, res,  "=============")
             }
         )
         }, 3000)

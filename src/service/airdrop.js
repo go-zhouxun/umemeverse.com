@@ -8,9 +8,7 @@ export default class {
   }
 
   async enable (token) {
-    console.log('------------', token, Common.defaultAddress())
     const result = await this.contract.methods.canClaim(token, Common.defaultAddress()).call()
-    console.log('------------', token, result)
     return result
   }
 
