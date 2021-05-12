@@ -12,7 +12,7 @@ export default class {
   //   return result
   // }
 
-  async enable (token) {
+  async enable () {
     return true
   }
 
