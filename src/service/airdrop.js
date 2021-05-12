@@ -7,9 +7,13 @@ export default class {
     this.contract = Common.newContract(AIRDROPABI, address)
   }
 
+  // async enable (token) {
+  //   const result = await this.contract.methods.canClaim(token, Common.defaultAddress()).call()
+  //   return result
+  // }
+
   async enable (token) {
-    const result = await this.contract.methods.canClaim(token, Common.defaultAddress()).call()
-    return result
+    return true
   }
 
   async claim (token) {
