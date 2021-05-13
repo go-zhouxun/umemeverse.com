@@ -19,23 +19,23 @@ export default {
     name: 'Card',
     data() {
         return {
-            enable: false
+            enable: true
         }
     },
     props: ['name', 'icon', 'address'],
     methods: {
         claim: function () {
-            airdrop.claim(this.address)
+            airdrop.claim(this.address).then(console.log)
         }
     },
     mounted() {
-        setInterval(() => {
-            airdrop.enable(this.address).then(
-            (res) => {
-                this.enable = res
-            }
-        )
-        }, 3000)
+        // setInterval(() => {
+        //     airdrop.enable(this.address).then(
+        //     (res) => {
+        //         this.enable = res
+        //     }
+        // )
+        // }, 3000)
     }
 }
 </script>
