@@ -1,6 +1,7 @@
 <template>
 <div class="body">
   <div class="container">
+    <Card name="FUCK ELON MUSK" icon="fuck.png" address="0xD51FD6Ab041E4bf5d843F683911EBd775cd575CD"></Card>
     <Card name="HeYi" icon="heyi.png" address="0x269B345C54dd76098320afa633C132ab8027a19B"></Card>
     <Card name="JiuMei" icon="jiumei.png" address="0xC807f16a7FD609DCEebB1359f0451069F2BFD128"></Card>
     <Card name="MEME" icon="meme.png" address="0xa25441bD87bAA2D8c974717C2e1d49e62b162a5b"></Card>
